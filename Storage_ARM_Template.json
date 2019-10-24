@@ -23,7 +23,7 @@
       }
     }
   },
-  "StorageAccountName": {
+  "MyStorageAccountName": {
     "type": "string",
     "defaultValue": "ajaybanStorageAccount",
     "metadata": {
@@ -33,7 +33,7 @@
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "name": "[parameters('StorageAccountName')]",
+      "name": "[parameters('MyStorageAccountName')]",
       "location": "[parameters('location')]",
       "apiVersion": "2019-04-01",
       "sku": {
@@ -46,7 +46,7 @@
   "outputs": {
     "storageAccountName": {
       "type": "string",
-      "value": "[parameters('StorageAccountName')]"
+      "value": "[parameters('MyStorageAccountName')]"
     }
   }
 }
