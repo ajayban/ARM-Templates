@@ -12,7 +12,7 @@
         "Premium_LRS"
       ],
       "metadata": {
-        "description": "Storage Account type"
+        "description": "Storage Account type ajayban template"
       }
     },
     "location": {
@@ -23,13 +23,17 @@
       }
     }
   },
-  "variables": {
-    "storageAccountName": "[concat('store', uniquestring(resourceGroup().id))]"
+  "MyStorageAccountName": {
+    "type": "string",
+    "defaultValue": "ajaybanStorageAccount",
+    "metadata": {
+      "description": "Name of the storage Account."
+    }
   },
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "name": "[variables('storageAccountName')]",
+      "name": "[parameters('MyStorageAccountName')]",
       "location": "[parameters('location')]",
       "apiVersion": "2019-04-01",
       "sku": {
@@ -42,7 +46,7 @@
   "outputs": {
     "storageAccountName": {
       "type": "string",
-      "value": "[variables('storageAccountName')]"
+      "value": "[parameters('MyStorageAccountName')]"
     }
   }
 }
