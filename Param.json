@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": { 
     "MyStorageAccountName": {
-      "value": "ajabanStorage123"
+      "value": "ajabanstorage123"
     }
   }
 }
