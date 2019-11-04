@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": { 
+    "ajsecret": {
+        "reference": {
+            "KeyVault": {
+                "id": "https://ajkeyvaultnew.vault.azure.net/secrets/mysecret/8c2ace4677644ee788633244a7fa4d1f"
+            }
+            "secretname": "mysecret"
+        }
+      
+    }
+  }
+}
