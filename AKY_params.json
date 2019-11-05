@@ -5,7 +5,7 @@
     "ajsecret": {
         "reference": {
             "KeyVault": {
-                "id": "https://ajkeyvaultnew.vault.azure.net/secrets/mysecret/8c2ace4677644ee788633244a7fa4d1f"
+                "id": "/subscriptions/9c9d5a45-5674-4a3d-9337-c2d4644a8ba9/resourceGroups/AjKeyVault/providers/Microsoft.KeyVault/vaults/AjKeyVaultNew"
             }
             "secretname": "mysecret"
         }
